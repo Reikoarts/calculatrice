@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 25px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 40vw;
+}
+
+.calcScreen{
+    width: 40vw;
+    text-align: center;
+}
+
+.calcScreen input {
+    width: 100%;
+    background-color: gray;
+    color: white;
+    text-align: right;
+    padding: 10px;
+    border: 0;
+}
+
+.calcBoutton, .AC, .select, .result {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.operateur {
+    background-color: chocolate;
+    color: white;
+}
+
+.chiffre {
+    background-color: gray;
+    color: white;
+}
+
+.chiffre:hover, .operateur:hover {
+    background-color: wheat;
+    color: black;
+}
+
+.zero {
+    grid-column: span 2;
+}
+
+.grid .submit {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.calcAfficheBoutton{
+    display: flex;
+    gap: 20px;
+}
+
+.calcAffiche {
+    margin: 20px 0;
+    border-bottom: 0.5px gray solid;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+.calcAffiche:hover {
+    border-bottom: 0.5px red solid;
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
+
+.calcInfobulle {
+    background-color: red;
+    margin-top: 20px;
+    width: 40vw;
+    height: 30px;
+    padding: 10px;
+}
+
+.infobulleText {
+    color: white;
+    font-size: 15px;
+}
