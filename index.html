@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <h1>Best calculatrice EUW</h1>
+    <ul class="calcAfficheBoutton">
+        <li class="calcAffiche">Réduire la calculatrice</li>
+    </ul>
+    <div class="calcScreen">
+        <input type="text" name="screen" class="screen"/>
+    </div>
+
+    <form class="grid" method="get">
+        <div class="AC operateur">
+            <p>AC</p>
+        </div>
+
+        <div class="calcBoutton operateur">
+            <p>.</p>
+        </div>
+
+        <div class="select operateur">
+            <select name="" id="">
+                <option value="Opé">Opé</option>
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="/">/</option>
+                <option value="*">*</option>
+            </select>
+        </div>
+
+        <div class="calcBoutton chiffre">
+            <p>7</p>
+        </div>
+        
+        <div class="calcBoutton chiffre">
+            <p>8</p>
+        </div>
+        
+        <div class="calcBoutton chiffre">
+            <p>9</p>
+        </div>
+        
+        <div class="calcBoutton chiffre">
+            <p>4</p>
+        </div>
+        
+        <div class="calcBoutton chiffre">
+            <p>5</p>
+        </div>
+
+        <div class="calcBoutton chiffre">
+            <p>6</p>
+        </div>
+
+        <div class="calcBoutton chiffre">
+            <p>1</p>
+        </div>
+        
+        <div class="calcBoutton chiffre">
+            <p>2</p>
+        </div>
+
+        <div class="calcBoutton chiffre">
+            <p>3</p>
+        </div>
+        
+        <div class="calcBoutton zero chiffre" col="2">
+            <p>0</p>
+        </div>
+        
+        <div class="result operateur">
+            <input type="submit" value="=" class="submit"/>
+        </div>
+    </form>
+    <div class="calcInfobulle">
+        <p class="infobulleText"></p>
+    </div>
+</body>
+</html>
